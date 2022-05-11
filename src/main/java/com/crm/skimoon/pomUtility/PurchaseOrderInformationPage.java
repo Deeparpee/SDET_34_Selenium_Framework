@@ -1,0 +1,28 @@
+package com.crm.skimoon.pomUtility;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class PurchaseOrderInformationPage 
+{
+	WebDriver driver;
+	public PurchaseOrderInformationPage(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(xpath= "//span[@class='lvtHeaderText']")
+    WebElement PurchaseOrderInformationPageTitle;
+	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getPurchaseOrderInformationPageTitle() {
+		return PurchaseOrderInformationPageTitle;
+	}
+	
+}
