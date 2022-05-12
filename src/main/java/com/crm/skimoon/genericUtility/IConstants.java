@@ -4,6 +4,7 @@ package com.crm.skimoon.genericUtility;
  * @author Dell
  *
  */
+
 public interface IConstants 
 {
 	String EXCEL_PATH="./data/data.xlsx";
